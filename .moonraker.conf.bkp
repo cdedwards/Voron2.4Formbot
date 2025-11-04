@@ -25,7 +25,6 @@ trusted_clients =
 	169.254.0.0/16
 	172.16.0.0/12
 	192.168.0.0/16
-	192.168.1.40
 	FE80::/10
 	::1/128
 
@@ -46,6 +45,7 @@ install_script = install.sh
 
 [file_manager]
 enable_object_processing = True
+default_metadata_parser_timeout = 30
 
 [update_manager fluidd]
 type = web
@@ -65,8 +65,11 @@ origin = https://github.com/mainsail-crew/crowsnest.git
 managed_services = crowsnest
 install_script = tools/pkglist.sh
 
+[analysis]
+enable_auto_analysis = true
+
 [spoolman]
-server = http://192.168.1.56:7912
+server = http://192.168.1.40:7912
 sync_rate = 5
 
 [update_manager CanBoot]
@@ -99,6 +102,7 @@ managed_services = klipper
 [mmu_server]
 enable_file_preprocessor = True
 enable_toolchange_next_pos = True
+update_spoolman_location = True
 
 [update_manager KlipperScreen]
 type = git_repo
@@ -109,10 +113,9 @@ requirements = scripts/KlipperScreen-requirements.txt
 install_script = scripts/KlipperScreen-install.sh
 managed_services = KlipperScreen
 
-[update_manager belay]
+[update_manager led_effect]
 type = git_repo
-path = ~/belay_klippy_module
-origin = https://github.com/Annex-Engineering/Belay.git
-primary_branch = main
-managed_services = klipper
+path = ~/klipper-led_effect
+origin = https://github.com/julianschill/klipper-led_effect.git
+is_system_service = False
 

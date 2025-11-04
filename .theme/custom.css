@@ -1,0 +1,387 @@
+:root { /* Edit the hex code here to change the colors easily as you like */
+  --bg-color: #a5a2a2; /* Title Bars for sections and section bodies and unactive buttons */
+  --panel-color: rgba(0, 0, 0, 0.75); /* Background and active buttons */
+  --icon-color: rgba(46,211,208,0.75); /* Background and active buttons */
+  --color1: #ffffff; /* Background and active buttons */
+  --color2: #000000; /* Left and top Main Bars plus reprint button */
+  --color3: #383838; /* Left and top Main Bars plus reprint button */
+  --color4: #ff0000; /* Left and top Main Bars plus reprint button */
+  --text-color: #14b3d4; /* most text besides major console stuff which is changed using fluidd main color changer */
+  --macro-text-color: #ffffff; /* Text color for macro buttons */
+  --logo-size: 150px;
+}
+
+[class*="macro"] .v-btn--has-bg .v-btn__content {
+    color: var(--macro-text-color) !important;
+}
+
+/* Panel Top Right Buttons */
+.v-btn--icon {
+    background-color: var(--color3) !important;
+        border-radius: 10px!important;
+}
+
+/* Panel Top Right (left) Buttons */
+.v-btn--tile {
+    background-color: var(--color3) !important;
+    border-radius: 10px!important;
+    
+}
+
+/* Klipper logo color */
+.nav-logo path {
+    fill: var(--text-color) !important;
+}
+
+/* Z offset bar left */ 
+.order-0 .v-size--small {
+    background-color: var(--color3) !important;
+}
+
+/* Z offset bar right */
+.d-flex ._btn-qs {
+    background-color: var(--color3) !important;
+}
+
+/* Extrude / Retract number bars */ 
+._btn-qs.v-size--default {
+    background-color: var(--color3) !important;
+}
+
+/* active selectable button (numbers) */
+.v-btn--active {
+    background-color: var(--color3) !important;
+}
+
+/* right buttons color*/ /*
+.v-btn:not(.v-btn--outlined).accent, .v-btn:not(.v-btn--outlined).error, .v-btn:not(.v-btn--outlined).info, .v-btn:not(.v-btn--outlined).primary, .v-btn:not(.v-btn--outlined).secondary, .v-btn:not(.v-btn--outlined).success, .v-btn:not(.v-btn--outlined).warning {
+    color: var(--text-color) !important;
+    background-color: var(--color3) !important;
+}
+*/
+
+
+/* set temperature text color */
+.theme--dark.v-input, .theme--dark.v-input input, .theme--dark.v-input textarea {
+    color: var(--text-color) !important;
+}
+
+
+
+/* build version text color */ 
+.v-application .text-body-2, .v-application .text-button {
+    font-size: .875rem!important;
+    font-family: Roboto,sans-serif!important;
+    color: var(--text-color) !important;
+    text-shadow: 1px 1px 0px var(--text-color), 0 0 50px var(--text-color), 0 0 3px white, 0 1px var(--text-color);
+}
+/* text editor text color */ 
+.theme--dark.v-btn {
+    color: var(--text-color) !important;
+}
+
+/*file name color*/ 
+.v-data-table>.v-data-table__wrapper>table>tbody>tr>td, .v-data-table>.v-data-table__wrapper>table>tfoot>tr>td, .v-data-table>.v-data-table__wrapper>table>thead>tr>td {
+    font-size: .875rem;
+    height: 48px;
+    color: var(--text-color) !important;
+}
+
+
+
+/*toolbar title*/ 
+.v-toolbar__title {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: var(--text-color) !important;
+    text-shadow: 1px 1px 0px var(--color1), 0 0 5px rgb(0,0,0), 0 0 3px rgb(0,0,0), 0 1px rgb(255,255,255);
+}
+
+/* icon color */ /*
+.mdi-set, .mdi:before {
+    display: inline-block;
+    font: normal normal normal 24px/1 Material Design Icons;
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-os#50bb19smoothing: grayscale;
+    color: #6f8c9d;
+}
+
+
+
+/**//*
+.col {
+    color: var(--text-color) !important;
+}
+/*Unclickable console text*/
+.theme--dark.v-application .text--primary {
+    color: var(--text-color) !important;
+}
+
+
+
+
+
+/**//*
+.v-btn.error {
+    background-color: var(--panel-color) !important;
+    border: none!important;
+    color: var(--text-color) !important;
+}
+
+/**//*
+.v-btn.error .v-icon__svg {
+    fill: var(--text-color) !important;
+}
+/**//*
+.theme--dark.v-data-table>.v-data-table__wrapper>table>tbody>tr:hover:not(.v-data-table__expanded__content):not(.v-data-table__empty-wrapper) {
+    background: #ff0000;
+}
+/**//*
+.theme--dark.v-sheet {
+    background-color: rgba(0,0,0,0.44)!important;
+    backdrop-filter: blur(25px);
+    border: none!important;
+    box-shadow: none!important;
+}
+
+/* left side with logo *//*
+.theme--dark.v-application,
+.theme--dark.v-navigation-drawer,
+.v-navigation-drawer__image>.v-image>.v-image__image.v-image__image--cover {
+    background-image: none!important;
+    border: none!important;
+    box-shadow: none!important;
+}
+/**//*
+.v-navigation-drawer__border {
+    width: 0;
+}
+
+/*top bar*//*
+.theme--dark.v-app-bar.v-toolbar.v-sheet {
+    background-color: rgba(0,0,0,0.32)!important;
+    backdrop-filter: blur(25px);
+    
+}
+
+
+{
+}
+
+/* left panel text*/
+.v-list-item__title {
+    color: var(--text-color) !important;
+}
+
+
+/* all pannels *//*
+.v-application .panel {
+    background-color: var(--panel-color) !important;
+    backdrop-filter: blur(25px);
+    box-shadow: none!important;
+    border: none;
+}
+/* panel titles *//*
+.v-application .panel .theme--dark.v-toolbar.v-sheet,
+.theme--dark.v-data-table,
+.theme--dark.v-tabs>.v-tabs-bar,
+.theme--dark.v-tabs-items,
+.v-sheet.v-list,
+.settings-tabs .theme--dark.v-sheet,
+.filesJobqueue.theme--dark.v-sheet,
+.v-card>*:first-child:not(.v-btn):not(.v-chip):not(.v-avatar), .v-card>.v-card__progress+*:not(.v-btn):not(.v-chip):not(.v-avatar),
+.filesGcodeCard.theme--dark.v-sheet,
+.cm-gutters,
+.cm-editor
+{
+    backdrop-filter: blur(0px);
+    background-color: transparent !important;
+    border: none!important;
+    box-shadow: none!important;
+}
+/* text input slot */
+.v-input__slot {
+    background-color: var(--color3) !important;
+    border: none!important;
+    box-shadow: none!important;
+}
+   
+
+/* console page text input background */
+
+
+/* console page body background /*/
+.col.pt-0 {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+}
+
+
+
+.mt-3 .col {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+    
+}
+
+/* console page messages *//*
+.console-message {
+    background-color: var(--color2) !important;
+}
+
+/* console page time *//*
+.console-time {
+    background-color: var(--color2) !important;
+}
+
+}
+/**//*
+.cm-gutter {
+    background-color: rgba(7,44,226,0.43)!important;
+}
+/**//*
+.echarts-tooltip {
+    background-color: rgba(139,22,217,0.43)!important;
+    backdrop-filter: blur(25px);
+    border: none!important;
+    box-shadow: none!important;
+}
+/**/ /*
+.v-menu__content {
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.43)!important;
+    backdrop-filter: blur(25px);
+}
+
+/* background color*/ 
+.v-application .mx-auto {
+    background-color: var(--bg-color) !important;
+}
+ /**/ /*
+.v-toolbar__content {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+}
+/**/ /*
+.v-card__text.pt-md-3 {
+        background-color: var(--color2) !important;
+    border-radius: 15px!important;
+}
+
+
+
+/* Progress circle, amount to go*/
+.v-progress-circular__underlay {
+    stroke: var(--color4) !important;
+}
+/**//*
+.v-btn {
+    border-radius: 8px;
+    
+    
+}
+/**/
+.webcamImage {
+    background-color: transparent!important;
+    margin-bottom: -8px!important;
+    overflow: hidden;
+}
+/**/
+.webcamFpsOutput {
+    bottom: -10px!important;
+    right: -10px!important;
+    background-color: rgba(0,0,0,0.33)!important;
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+    
+}
+/**//*
+div[data-v-11632d50] {
+    border-radius: 0 0 15px 15px!important;
+    overflow: hidden;
+}
+/**//*
+.v-dialog,
+.v-sheet.v-card,
+.v-tooltip__content.menuable__content__active {
+    border: none;
+    border-radius: 15px!important;
+}
+/**//*
+.v-dialog--fullscreen .v-sheet.v-card {
+    border-radius: 0!important;
+}
+/**//*
+svg a[data-v-5c71071d] {
+    stroke: none!important;
+}
+/* Temperature Chat Text */
+x-vue-echarts text{
+    stroke: var(--text-color) !important;
+    fill-opacity: 2 !important;
+}
+/**//*
+.icon-rotate {
+    animation-duration: 1.75s!important;
+}
+
+/* icon color */
+.v-icon__svg {
+    color: var(--icon-color) !important;
+}
+
+/* emergency button color */
+.emergency-button,.error--text .d-md-inline, 
+.emergency-button .v-icon__svg {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important;
+    color: var(--color2) !important;
+}
+
+/* Panel Color */
+.theme--dark.v-sheet {
+    background-color: var(--color2) !important;
+    border-radius: 15px!important;
+    
+}
+
+/* Input Bar and Button Roundness 8*/
+.v-input__slot {
+    border-radius: 10px!important;
+    
+}
+/* Statistics screen circle color *//*
+.col-sm-6 path {
+    fill: var(--color1) !important;
+}
+
+/* Toolhead Home Buttons */
+.col-6 .w-100, .v-btn--tile.flex-grow-1, .btnMinWidthAuto.warning {
+    background-color: var(--color3) !important;
+}
+ /* Potion and "default" text */
+.text-no-wrap {
+    color: var(--text-color) !important;
+}
+
+/* Small Bracketed Text */
+.v-text-field .v-label {
+color: var(--text-color) !important;
+}
+
+/* Heatbreak coling fan and filament runout sensor text */
+.pb-3  span {
+    color: var(--text-color) !important;
+}
+
+/* Current Mesh Tab Text */
+.row.px-3 .col {
+    color: var(--text-color) !important;
+}
+
